@@ -4,7 +4,7 @@ const local = "http://localhost:8080";
 const pro = "https://api.medifasthealthcare.com";
 // const pro = ""
 let base_url = "";
-let mode = "local";
+let mode = "pro";
 if (mode === "pro") {
   base_url = pro;
 } else {

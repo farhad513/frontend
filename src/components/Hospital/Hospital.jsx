@@ -28,24 +28,16 @@ const Hospital = ({ hospital }) => {
             <p className="text-sm text-gray-600 line-clamp-1">
               {hospital?.address || "ঠিকানা পাওয়া যায়নি"}
             </p>
+            <p className="text-sm text-gray-600 line-clamp-1">
+             হাসপাতালের ধরন : {hospital?.type || "হাসপাতালের ধরন পাওয়া যায়নি"}
+            </p>
+            <p className="text-sm text-gray-600 line-clamp-1">
+             জরুরি সেবা : {hospital?.emergency || "জরুরি পাওয়া যায়নি"}
+            </p>
 
-            {hospital?.email ? (
-              <div className="flex gap-2 items-center text-sm text-gray-700 break-all">
-                <BiLogoGmail className="text-red-500" />
-                <p>{hospital.email}</p>
-              </div>
-            ) : (
-              <div className="h-5" />
-            )}
 
-            {hospital?.phone ? (
-              <div className="flex gap-2 items-center text-sm text-gray-700">
-                <FaMobileScreen className="text-green-500" />
-                <p>{hospital.phone}</p>
-              </div>
-            ) : (
-              <div className="h-5" />
-            )}
+
+          
           </div>
         </div>
 

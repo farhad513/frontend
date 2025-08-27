@@ -27,6 +27,7 @@ const AmbulanceBooking = lazy(() => import("./pages/AmbulanceBooking"));
 const Medicine = lazy(() => import("./pages/Medicine"));
 const VerifyOtp = lazy(() => import("./pages/VerifyOtp"));
 const Loading = lazy(() => import("./components/Loading/Loading"));
+const Download = lazy(() => import("./pages/Download"));
 
 
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/verify-otp" element={<VerifyOtp />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/download" element={<Download />} />
 
           <Route path="/our-doctors" element={<DoctorPage />} />
           <Route path="/doctor/details/:id" element={<DoctorDetails />} />

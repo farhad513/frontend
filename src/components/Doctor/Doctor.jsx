@@ -49,8 +49,8 @@ const Doctor = ({ doctor }) => {
               <h5 className="text-sm sm:text-base font-bold cursor-pointer text-gray-800 line-clamp-2">{trimWords(doctor.name,3)}</h5>
             </div>
 
-            <p className="text-sm font-medium">{doctor.qualification}</p>
-            <p className="text-sm font-medium">বিভাগ: {trimWords(doctor.category,2)}</p>
+            <p className="text-sm font-medium">{trimWords(doctor.qualification,4)}</p>
+            <p className="text-sm font-medium">বিভাগ: {trimWords(doctor.category,3)}</p>
             <p className="text-sm font-medium">{doctor.experience} বছরের অভিজ্ঞতা</p>
             <p className="text-sm font-medium">চেম্বার ফি: {doctor.fee}</p>
             <p className="text-sm font-medium">চেম্বার: {doctor?.hospital?.name}</p>

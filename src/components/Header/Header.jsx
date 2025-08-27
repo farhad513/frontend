@@ -57,7 +57,7 @@ const Header = () => {
       <div className=" bg-sky-500 text-white text-center py-2 px-4 lg:px-12 flex justify-between items-center">
         <span className="font-medium">আমাদের অ্যাপ ডাউনলোড করুন!</span>
         <a
-          href="/public/apk/MEDIFAST HC.apk"
+          href="/apk/MEDIFAST HC.apk"
           className="bg-white text-sky-500 px-4 py-1 rounded shadow hover:bg-gray-100 font-semibold"
         >
           Download APK
